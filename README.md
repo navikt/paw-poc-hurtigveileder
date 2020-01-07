@@ -1,6 +1,6 @@
 # paw-poc-hurtigveileder
 
-Ekperiment for minimal veiledning før arbeidssøkerregistrering
+Eksperiment for minimal veiledning før arbeidssøkerregistrering
 
 # Lisens
 

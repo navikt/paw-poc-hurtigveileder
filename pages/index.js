@@ -15,7 +15,7 @@ function Home () {
     <h1>
       Hurtigveileder
     </h1>
-    <DatePicker onChange={handleDateChange} placeholderText="Siste arbeidsdag?" className="border"/>
+    <DatePicker onChange={handleDateChange} placeholderText="Siste arbeidsdag?" className="border "/>
     { showVeileder ? <Veileder lastDay={lastDay} /> : null }
     </div>
   )
