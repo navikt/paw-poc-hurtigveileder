@@ -1,7 +1,7 @@
 const Arbeidsplassen = props => {
   return (
     <div>
-      Registrer deg på arbeidsplassen.no
+      <h2>Legg inn CV på arbeidsplassen.no</h2>
     </div>
   )
 }
