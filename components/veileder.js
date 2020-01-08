@@ -1,12 +1,9 @@
-import dynamic from 'next/dynamic'
 import Arbeidsplassen from './arbeidsplassen'
 import Dagpenger from './dagpenger'
 import Dokumentasjon from './dokumentasjon'
+import Mer from './mer'
 import Registrering from './registrering'
-const Tilbakemelding = dynamic(
-  () => import('./tilbakemelding'),
-  { ssr: false }
-)
+import Tilbakemelding from './tilbakemelding'
 
 const Veileder = props => {
   const { lastDay } = props
@@ -17,6 +14,7 @@ const Veileder = props => {
       <Dokumentasjon />
       <Arbeidsplassen />
       <Tilbakemelding />
+      <Mer />
     </>
   )
 }

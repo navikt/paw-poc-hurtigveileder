@@ -1,7 +1,12 @@
 import { useState } from 'react'
 import DayPicker from 'react-day-picker'
-import Veileder from '../components/veileder'
+import dynamic from 'next/dynamic'
 import 'react-day-picker/lib/style.css'
+
+const Veileder = dynamic(
+  () => import('../components/veileder'),
+  { ssr: false }
+)
 
 function Home () {
   const [lastDay, setLastDay] = useState('')
