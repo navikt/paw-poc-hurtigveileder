@@ -1,5 +1,5 @@
 const purgecss = require('@fullhuman/postcss-purgecss')({
-  whitelistPatterns: [/react-datepicker/],
+  whitelistPatterns: [/DayPicker/],
   content: ['./components/**/*.js', './pages/**/*.js'],
   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
 })
