@@ -15,7 +15,7 @@ function Home () {
       <h1 className='text-4xl'>
         Hurtigveileder
       </h1>
-      <p>Hvilken dato er din siste arbeidsdag?</p>
+      <p><strong>Oppgi siste dag du får lønn for</strong></p>
       <DayPicker onDayClick={handleDateChange} />
       {showVeileder ? <Veileder lastDay={lastDay} /> : null}
     </div>
