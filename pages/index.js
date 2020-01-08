@@ -11,13 +11,13 @@ function Home () {
     setShowVeileder(true)
   }
   return (
-    <div className="container mx-auto px-4">
-      <h1 className="text-4xl">
+    <div className='container mx-auto px-4'>
+      <h1 className='text-4xl'>
         Hurtigveileder
       </h1>
       <p>Hvilken dato er din siste arbeidsdag?</p>
       <DayPicker onDayClick={handleDateChange} />
-      { showVeileder ? <Veileder lastDay={lastDay} /> : null }
+      {showVeileder ? <Veileder lastDay={lastDay} /> : null}
     </div>
   )
 }

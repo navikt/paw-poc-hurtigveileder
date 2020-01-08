@@ -11,7 +11,7 @@ const Innhold = () => {
 const Registrering = props => {
   const { lastDay } = props
   const firstDay = calculateDay(lastDay, 6)
-  const now = new Date
+  const now = new Date()
   return firstDay <= now ? <Innhold /> : null
 }
 

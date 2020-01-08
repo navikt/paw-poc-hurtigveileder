@@ -6,7 +6,7 @@ const Dagpenger = props => {
   const now = new Date()
   return (
     <div>
-      Dagpenger: {  firstDay <= now ? 'nå' : firstDay.toLocaleDateString() }
+      Dagpenger: {firstDay <= now ? 'nå' : firstDay.toLocaleDateString()}
     </div>
   )
 }
