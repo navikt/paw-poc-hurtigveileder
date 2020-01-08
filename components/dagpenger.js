@@ -2,7 +2,7 @@ import calculateDay from '../lib/calculate-day'
 
 const Dagpenger = props => {
   const { lastDay } = props
-  const firstDay = calculateDay(lastDay)
+  const firstDay = calculateDay(lastDay, 6)
   const now = new Date()
   return (
     <div>

@@ -1,3 +1,5 @@
+import calculateDay from '../lib/calculate-day'
+
 const Innhold = () => {
   return (
     <div>
@@ -8,8 +10,9 @@ const Innhold = () => {
 
 const Registrering = props => {
   const { lastDay } = props
+  const firstDay = calculateDay(lastDay, 6)
   const now = new Date
-  return lastDay <= now ? <Innhold /> : null
+  return firstDay <= now ? <Innhold /> : null
 }
 
 export default Registrering
