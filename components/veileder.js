@@ -9,9 +9,9 @@ const Veileder = props => {
   return (
     <>
       <Registrering lastDay={lastDay} />
+      <Dagpenger lastDay={lastDay} />
       <Dokumentasjon />
       <Arbeidsplassen />
-      <Dagpenger lastDay={lastDay} />
       <Tilbakemelding />
     </>
   )
