@@ -7,7 +7,7 @@ const RegistreringLink = () => {
     amplitudeLogger('hurtigveileder.click', { goto: 'arbeidssøkerregistrering' })
   }
   return (
-    <li><a href="https://arbeidssokerregistrering.nav.no" className="underline" target='_blank' rel='noopener noreferrer' onClick={handleClick}>Gå til arbeidssøkerregistrering</a></li>
+    <li><a href='https://arbeidssokerregistrering.nav.no' className='underline' target='_blank' rel='noopener noreferrer' onClick={handleClick}>Gå til arbeidssøkerregistrering</a></li>
   )
 }
 

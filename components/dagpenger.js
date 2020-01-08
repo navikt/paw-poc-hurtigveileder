@@ -7,7 +7,7 @@ const DagpengeLink = () => {
     amplitudeLogger('hurtigveileder.click', { goto: 'dagpengesøknad' })
   }
   return (
-    <li><a href="https://www.nav.no/soknader/nb/person/arbeid/dagpenger" className="underline" target='_blank' rel='noopener noreferrer' onClick={handleClick}>Gå til dagpengesøknad</a></li>
+    <li><a href='https://www.nav.no/soknader/nb/person/arbeid/dagpenger' className='underline' target='_blank' rel='noopener noreferrer' onClick={handleClick}>Gå til dagpengesøknad</a></li>
   )
 }
 
@@ -28,8 +28,8 @@ const Dagpenger = props => {
       </p>
       <ul>
         {firstDay <= now ? <DagpengeLink /> : null}
-        <li><a href="https://www.nav.no/arbeid/dagpenger/kalkulator" className="underline" data-goto="dagpengekalkulatoren" target='_blank' rel='noopener noreferrer' onClick={handleClick}>Gå til dagpengekalkulatoren</a></li>
-        <li><a href="https://www.nav.no/no/person/arbeid/dagpenger-ved-arbeidsloshet-og-permittering/dagpenger-nar-du-er-arbeidsledig" className="underline" data-goto="dagpengesiden" target='_blank' rel='noopener noreferrer' onClick={handleClick}>Gå til dagpengesiden</a></li>
+        <li><a href='https://www.nav.no/arbeid/dagpenger/kalkulator' className='underline' data-goto='dagpengekalkulatoren' target='_blank' rel='noopener noreferrer' onClick={handleClick}>Gå til dagpengekalkulatoren</a></li>
+        <li><a href='https://www.nav.no/no/person/arbeid/dagpenger-ved-arbeidsloshet-og-permittering/dagpenger-nar-du-er-arbeidsledig' className='underline' data-goto='dagpengesiden' target='_blank' rel='noopener noreferrer' onClick={handleClick}>Gå til dagpengesiden</a></li>
       </ul>
     </div>
   )
