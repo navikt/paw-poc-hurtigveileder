@@ -7,8 +7,8 @@ const Mer = () => {
   }
 
   return (
-    <div className="rounded border px-4 py-4 mb-4 cursor-pointer" onClick={handleClick}>
-      <h2 className="text-2xl">Mer veiledning</h2>
+    <div className='rounded border px-4 py-4 mb-4 cursor-pointer' onClick={handleClick}>
+      <h2 className='text-2xl'>Mer veiledning</h2>
       <p>
         Trykk her for å komme til den utvidede veilederen vår.
       </p>

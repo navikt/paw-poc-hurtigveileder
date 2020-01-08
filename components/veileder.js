@@ -1,3 +1,6 @@
+import { useEffect } from 'react'
+import { amplitudeLogger } from '../lib/amplitude-utils'
+import daysFromNow from '../lib/days-from-now'
 import Arbeidsplassen from './arbeidsplassen'
 import Dagpenger from './dagpenger'
 import Dokumentasjon from './dokumentasjon'
@@ -7,6 +10,13 @@ import Tilbakemelding from './tilbakemelding'
 
 const Veileder = props => {
   const { lastDay } = props
+  const days = daysFromNow(lastDay)
+
+  useEffect(() => {
+    amplitudeLogger('hurtigveiledning.visning')
+    amplitudeLogger('hurtigveiledning.dager-i-forkant', { days })
+  })
+
   return (
     <>
       <Registrering lastDay={lastDay} />
