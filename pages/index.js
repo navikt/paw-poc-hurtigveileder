@@ -4,7 +4,7 @@ import Veileder from '../components/veileder'
 import 'react-datepicker/dist/react-datepicker.css'
 
 function Home () {
-  const [lastDay, setLastDay] = useState(new Date())
+  const [lastDay, setLastDay] = useState('')
   const [showVeileder, setShowVeileder] = useState(false)
   const handleDateChange = date => {
     setLastDay(date)
@@ -15,7 +15,7 @@ function Home () {
     <h1>
       Hurtigveileder
     </h1>
-    <DatePicker onChange={handleDateChange} placeholderText="Siste arbeidsdag?" className="border "/>
+    <DatePicker onChange={handleDateChange} selected={lastDay} placeholderText="Siste arbeidsdag?" className="border" dateFormat="dd.MM.yyyy"/>
     { showVeileder ? <Veileder lastDay={lastDay} /> : null }
     </div>
   )

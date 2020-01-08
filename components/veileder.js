@@ -1,20 +1,18 @@
-import calculateDay from '../lib/calculate-day'
+import Arbeidsplassen from './arbeidsplassen'
+import Dagpenger from './dagpenger'
+import Dokumentasjon from './dokumentasjon'
+import Registrering from './registrering'
+import Tilbakemelding from './tilbakemelding'
 
 const Veileder = props => {
   const { lastDay } = props
-  const firstDay = calculateDay(lastDay)
-  const now = new Date()
   return (
     <>
-      <div>
-        Skaff dokumentasjon fra arbeidsgiver
-      </div>
-      <div>
-        Registrer CV på Arbeidsplassen
-      </div>
-      <div>
-        Dagpenger: {  firstDay <= now ? 'nå' : firstDay.toLocaleDateString() }
-      </div>
+      <Registrering lastDay={lastDay} />
+      <Dokumentasjon />
+      <Arbeidsplassen />
+      <Dagpenger lastDay={lastDay} />
+      <Tilbakemelding />
     </>
   )
 }
