@@ -1,9 +1,13 @@
+import { amplitudeLogger } from '../lib/amplitude-utils'
 import calculateDay from '../lib/calculate-day'
 import prettyPrintDate from '../lib/pretty-print-date'
 
 const RegistreringLink = () => {
+  const handleClick = event => {
+    amplitudeLogger('hurtigveileder.click', { goto: 'arbeidssøkerregistrering' })
+  }
   return (
-    <li>Link til registreringsskjema</li>
+    <li><a href="https://arbeidssokerregistrering.nav.no" className="underline" target='_blank' rel='noopener noreferrer' onClick={handleClick}>Gå til arbeidssøkerregistrering</a></li>
   )
 }
 
@@ -19,7 +23,6 @@ const Registrering = props => {
       </p>
       <ul>
         {firstDay <= now ? <RegistreringLink /> : null}
-        <li>Link til mer om arbeidssøkerregistrering</li>
       </ul>
     </div>
   )
