@@ -18,7 +18,7 @@ function Home () {
   }
   const Calendar = () => {
     return (
-      <div className="bg-white">
+      <div className='bg-white'>
         <p><strong>Oppgi siste dag du får lønn for</strong></p>
         <DayPicker onDayClick={handleDateChange} />
       </div>
