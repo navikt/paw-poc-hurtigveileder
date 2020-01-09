@@ -18,9 +18,9 @@ function Home () {
   }
   const Calendar = () => {
     return (
-      <div className='bg-white'>
-        <p><strong>Oppgi siste dag du får lønn for</strong></p>
+      <div className='bg-white px-4 py-4'>
         <DayPicker onDayClick={handleDateChange} />
+        <p className="mt-2"><strong>Oppgi siste dag du får lønn for</strong></p>
       </div>
     )
   }
@@ -30,7 +30,7 @@ function Home () {
         <meta name='description' content='Hurtigveileder for deg som har mistet jobbben og skal registrere deg som arbeidssøker.' />
         <title>Hurtigveileder - arbeidssøkerregistrering - mistet jobben</title>
       </Head>
-      <div className='container mx-auto px-4'>
+      <div className='container mx-auto px-4 py-4'>
         <h1 className='text-4xl'>
           Hurtigveileder
         </h1>
