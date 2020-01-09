@@ -1,0 +1,33 @@
+apiVersion: 'nais.io/v1alpha1'
+kind: 'Application'
+metadata:
+  name: hurtigveileder
+  namespace: default
+  cluster: prod-sbs
+  labels:
+    team: paw
+spec:
+  image: {{image}}
+  port: 8080
+  liveness:
+    path: hurtigveileder/internal/isAlive
+    initialDelay: 60
+  readiness:
+    path: hurtigveileder/internal/selftest
+    initialDelay: 60
+  replicas:
+    min: 2
+    max: 4
+    cpuThresholdPercentage: 50
+  prometheus:
+    enabled: true
+    path: hurtigveileder/internal/metrics
+  ingresses:
+    - https://hurtigveileder.nav.no
+    - https://tjenester.nav.no/hurtigveileder
+  vault:
+    enabled: true
+  webproxy: true
+  env:
+    - name: DITTNAV_LINK_URL
+      value: 'https://tjenester.nav.no/dittnav/'
