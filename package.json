@@ -1,7 +1,7 @@
 {
   "name": "paw-poc-hurtigveileder",
   "version": "1.0.0",
-  "description": "Ekperiment for minimal veiledning før arbeidssøkerregistrering",
+  "description": "Eksperiment for minimal veiledning før arbeidssøkerregistrering",
   "main": "index.js",
   "scripts": {
     "test": "standard && npm audit",
