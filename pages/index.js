@@ -16,6 +16,14 @@ function Home () {
     setLastDay(date)
     setShowVeileder(true)
   }
+  const Calendar = () => {
+    return (
+      <>
+        <p><strong>Oppgi siste dag du får lønn for</strong></p>
+        <DayPicker onDayClick={handleDateChange} />
+      </>
+    )
+  }
   return (
     <>
       <Head>
@@ -26,9 +34,7 @@ function Home () {
         <h1 className='text-4xl'>
           Hurtigveileder
         </h1>
-        <p><strong>Oppgi siste dag du får lønn for</strong></p>
-        <DayPicker onDayClick={handleDateChange} />
-        {showVeileder ? <Veileder lastDay={lastDay} /> : null}
+        {showVeileder ? <Veileder lastDay={lastDay} setShowVeileder={setShowVeileder} /> : <Calendar />}
       </div>
     </>
   )
