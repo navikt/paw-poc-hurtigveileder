@@ -2,9 +2,6 @@
   "version": 2,
   "name": "paw-poc-hurtigveileder",
   "scope": "zrrrzzt",
-  "alias": [
-    "hurtigmikser.nav.party"
-  ],
   "env": {
     "NODE_ENV": "production"
   },
