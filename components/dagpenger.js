@@ -35,7 +35,7 @@ const Dagpenger = props => {
     <div className='rounded border px-4 py-4 mb-4'>
       <h2 className='text-2xl'>Dette bør du gjøre fremover</h2>
       <p>
-        Din siste dag med lønn {days > 0 ? 'er' : 'var'} <strong>{prettyPrintDate(lastDay)}.</strong> <span className="cursor-pointer" onClick={handleNyDato}>[endre dato]</span><br />
+        Din siste dag med lønn {days > 0 ? 'er' : 'var'} <strong>{prettyPrintDate(lastDay)}.</strong> <span className='cursor-pointer' onClick={handleNyDato}>[endre dato]</span><br />
         Du bør registrere deg som arbeidssøker og søke dagpenger <strong>{firstDay <= now ? 'nå' : `i perioden ${prettyPrintDate(firstDay)} - ${prettyPrintDate(periodEnd)}`}</strong>
       </p>
       {firstDay <= now ? <DagpengeLink /> : null}
