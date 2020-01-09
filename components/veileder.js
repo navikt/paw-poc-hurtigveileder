@@ -13,8 +13,8 @@ const Veileder = props => {
   const days = daysFromNow(lastDay)
 
   useEffect(() => {
-    amplitudeLogger('hurtigveiledning.visning')
-    amplitudeLogger('hurtigveiledning.dager-i-forkant', { days })
+    amplitudeLogger('visning')
+    amplitudeLogger('dager-i-forkant', { days })
   })
 
   return (

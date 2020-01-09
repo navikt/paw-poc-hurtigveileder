@@ -4,7 +4,8 @@ import prettyPrintDate from '../lib/pretty-print-date'
 
 const RegistreringLink = () => {
   const handleClick = event => {
-    amplitudeLogger('hurtigveileder.click', { goto: 'arbeidssøkerregistrering' })
+    const url = event.target.href
+    amplitudeLogger('link', { url })
   }
   return (
     <li><a href='https://arbeidssokerregistrering.nav.no' className='underline' target='_blank' rel='noopener noreferrer' onClick={handleClick}>Gå til arbeidssøkerregistrering</a></li>

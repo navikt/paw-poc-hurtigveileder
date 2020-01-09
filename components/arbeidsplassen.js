@@ -2,7 +2,8 @@ import { amplitudeLogger } from '../lib/amplitude-utils'
 
 const Arbeidsplassen = props => {
   const handleClick = event => {
-    amplitudeLogger('hurtigveileder.click', { goto: 'arbeidsplassen.no' })
+    const url = event.target.href
+    amplitudeLogger('link', { url })
   }
 
   return (

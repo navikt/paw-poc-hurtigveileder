@@ -5,7 +5,7 @@ const Tilbakemelding = props => {
   const [response, setResponse] = useState(false)
   const handleClick = event => {
     const smiley = event.target.dataset.smiley
-    amplitudeLogger('hurtigveileder.tilbakemelding', { smiley })
+    amplitudeLogger('tilbakemelding', { smiley })
     setResponse(true)
   }
   const ThankYou = () => {
