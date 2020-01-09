@@ -8,10 +8,8 @@ const Arbeidsplassen = props => {
 
   return (
     <div className='bg-white border px-4 py-4 mb-4'>
-      <h2 className='text-2xl'>Legg inn CV på arbeidsplassen.no</h2>
       <p>
-        På <a href='https://arbeidsplassen.nav.no/' className='underline' target='_blank' rel='noopener noreferrer' onClick={handleClick}>arbeidsplassen.no</a> finner du mange ledige stillinger.<br />
-        Det er også enkelt å registrere CVen din slik at arbeidsgivere også kan finne deg.
+        <a href='https://arbeidsplassen.nav.no/' className='underline text-blue-600' target='_blank' rel='noopener noreferrer' onClick={handleClick}>Du kan registrere CV og finne ledige stillinger på arbeidsplassen.no</a>
       </p>
     </div>
   )
