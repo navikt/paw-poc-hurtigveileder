@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import DayPicker from 'react-day-picker'
 import dynamic from 'next/dynamic'
+import Head from 'next/head'
 import 'react-day-picker/lib/style.css'
 
 const Veileder = dynamic(
@@ -16,14 +17,20 @@ function Home () {
     setShowVeileder(true)
   }
   return (
-    <div className='container mx-auto px-4'>
-      <h1 className='text-4xl'>
-        Hurtigveileder
-      </h1>
-      <p><strong>Oppgi siste dag du får lønn for</strong></p>
-      <DayPicker onDayClick={handleDateChange} />
-      {showVeileder ? <Veileder lastDay={lastDay} /> : null}
-    </div>
+    <>
+      <Head>
+        <meta name='description' content='Hurtigveileder for deg som har mistet jobbben og skal registrere deg som arbeidssøker.' />
+        <title>Hurtigveileder - arbeidssøkerregistrering - mistet jobben</title>
+      </Head>
+      <div className='container mx-auto px-4'>
+        <h1 className='text-4xl'>
+          Hurtigveileder
+        </h1>
+        <p><strong>Oppgi siste dag du får lønn for</strong></p>
+        <DayPicker onDayClick={handleDateChange} />
+        {showVeileder ? <Veileder lastDay={lastDay} /> : null}
+      </div>
+    </>
   )
 }
 
