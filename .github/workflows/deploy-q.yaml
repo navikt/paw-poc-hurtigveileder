@@ -4,7 +4,7 @@ on:
       - master
 name: Deploy to q on push
 env:
-  IMAGE_NAME: docker.pkg.github.com/navikt/hurtigveileder/hurtigveileder
+  IMAGE_NAME: docker.pkg.github.com/navikt/paw-poc-hurtigveileder/hurtigveileder
   TZ: Europe/Amsterdam
   CI: true
 
