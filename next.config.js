@@ -1,7 +1,12 @@
 const withCSS = require('@zeit/next-css')
 
 const nextConfig = {
-  target: 'serverless'
+  exportTrailingSlash: true,
+  exportPathMap: function() {
+    return {
+      '/': { page: '/' }
+    };
+  }
 }
 
 module.exports = withCSS(nextConfig)
