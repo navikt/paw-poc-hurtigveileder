@@ -1,3 +1,9 @@
+.github
 .next
+decorator.yaml
+Dockerfile
+nais-prod.yaml
+nais-q.yaml
 node_modules
+out
 test
