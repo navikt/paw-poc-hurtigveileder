@@ -4,7 +4,7 @@
   "description": "Ekperiment for minimal veiledning før arbeidssøkerregistrering",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "standard && npm audit",
     "dev": "next",
     "build": "next build",
     "start": "next start",
