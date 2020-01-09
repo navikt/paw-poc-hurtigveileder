@@ -2,10 +2,10 @@ const withCSS = require('@zeit/next-css')
 
 const nextConfig = {
   exportTrailingSlash: true,
-  exportPathMap: function() {
+  exportPathMap: function () {
     return {
       '/': { page: '/' }
-    };
+    }
   }
 }
 
