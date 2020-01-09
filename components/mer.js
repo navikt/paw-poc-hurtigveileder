@@ -7,7 +7,7 @@ const Mer = () => {
   }
 
   return (
-    <div className='rounded border px-4 py-4 mb-4 cursor-pointer'>
+    <div className='bg-white border px-4 py-4 mb-4 cursor-pointer'>
       <h2 className='text-2xl'>Mer veiledning</h2>
       <p>
         Ønsker du mer veiledning kan gå til vår utvidede veileder.

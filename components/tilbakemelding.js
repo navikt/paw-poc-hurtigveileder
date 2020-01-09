@@ -29,7 +29,7 @@ const Tilbakemelding = props => {
   }
 
   return (
-    <div className='rounded border px-4 py-4 mb-4'>
+    <div className='bg-white border px-4 py-4 mb-4'>
       <p><strong>Hvor nyttig synes du veiledningen var?</strong></p>
       {response ? <ThankYou /> : <Smileys />}
     </div>
