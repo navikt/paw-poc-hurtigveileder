@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { amplitudeLogger } from '../lib/amplitude-utils'
 import daysFromNow from '../lib/days-from-now'
+import prettyPrintDate from '../lib/pretty-print-date'
 import Arbeidsplassen from './arbeidsplassen'
 import Dagpenger from './dagpenger'
 import Dokumentasjon from './dokumentasjon'
@@ -19,6 +20,10 @@ const Veileder = props => {
 
   return (
     <>
+      <div className='px-4 py-4 mb-4'>
+        Din siste dag med lønn {days > 0 ? 'er' : 'var'} <strong>{prettyPrintDate(lastDay)}</strong>.<br />
+        Her er hva du bør gjøre fremover.
+      </div>
       <Registrering lastDay={lastDay} />
       <Dagpenger lastDay={lastDay} />
       <Dokumentasjon />
