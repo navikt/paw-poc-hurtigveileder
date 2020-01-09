@@ -20,7 +20,7 @@ function Home () {
     return (
       <div className='bg-white px-4 py-4'>
         <DayPicker onDayClick={handleDateChange} />
-        <p className="mt-2"><strong>Oppgi siste dag du får lønn for</strong></p>
+        <p className='mt-2'><strong>Oppgi siste dag du får lønn for</strong></p>
       </div>
     )
   }
