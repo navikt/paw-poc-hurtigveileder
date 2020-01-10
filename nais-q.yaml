@@ -26,6 +26,4 @@ spec:
     - https://hurtigveileder-q.nav.no
     - https://hurtigveileder-q0.nais.oera-q.local
     - https://hurtigveileder-q0.dev-sbs.nais.io
-  vault:
-    enabled: true
   webproxy: true
