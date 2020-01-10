@@ -12,6 +12,7 @@ const Mer = () => {
         <strong>Ønsker du mer veiledning?</strong>
       </p>
       <ul>
+        <li className='mb-2'><a href='https://www.nav.no/no/person/arbeid/dagpenger-ved-arbeidsloshet-og-permittering/dagpenger' className='underline text-blue-600' target='_blank' rel='noopener noreferrer' onClick={handleClick}>Mer om dagpenger</a></li>
         <li className='mb-2'><a href='https://veiledearbeidssoker.nav.no/mistet-jobben?sprak=nb' className='underline text-blue-600' target='_blank' rel='noopener noreferrer' onClick={handleClick}>Gå til veileder for deg som har mistet jobben eller sagt opp</a></li>
         <li className='mb-2'><a href='https://veiledearbeidssoker.nav.no/permittert?sprak=nb' className='underline text-blue-600' target='_blank' rel='noopener noreferrer' onClick={handleClick}>Gå til veileder for deg som er permittert</a></li>
         <li className='mb-2'><a href='https://veiledearbeidssoker.nav.no/bytte-jobb?sprak=nb' className='underline text-blue-600' target='_blank' rel='noopener noreferrer' onClick={handleClick}>Gå til veileder for deg som vil bytte jobb</a></li>
