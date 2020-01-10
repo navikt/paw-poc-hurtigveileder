@@ -2,3 +2,10 @@ contextPath: /
 
 auth:
   enforce: false
+  loginUrl: {{VEILARBSTEPUP_OIDC_URL}}
+  
+redirect:
+  - from: /arbeidssokerregistrering
+    to: {{ARBEIDSSOKERREGISTRERING_URL}}
+  - from: /veientilarbeid
+    to: {{VEIENTILARBEID_URL}}
