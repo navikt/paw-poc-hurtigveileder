@@ -9,15 +9,6 @@ metadata:
 spec:
   image: {{image}}
   port: 8080
-  env:
-    - name: ARBEIDSSOKERREGISTRERING_URL
-      value: https://arbeidssokerregistrering.nav.no/
-    - name: VEIENTILARBEID_URL
-      value: https://veientilarbeid.nav.no/
-    - name: VEILARBSTEPUP_OIDC_URL
-      value: 
-    - name: AAD_B2C_DISCOVERY_URL
-      value:
   liveness:
     path: hurtigveileder/internal/isAlive
     initialDelay: 60
@@ -37,6 +28,5 @@ spec:
   vault:
     enabled: true
   webproxy: true
-  env:
-    - name: DITTNAV_LINK_URL
-      value: 'https://tjenester.nav.no/dittnav/'
+   envFrom:
+    - configmap: pto-config

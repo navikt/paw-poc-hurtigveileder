@@ -9,13 +9,6 @@ metadata:
 spec:
   image: {{image}}
   port: 8080
-  env:
-    - name: ARBEIDSSOKERREGISTRERING_URL
-      value: https://arbeidssokerregistrering-q.nav.no/
-    - name: VEIENTILARBEID_URL
-      value: https://veientilarbeid-q.nav.no/
-    - name: VEILARBSTEPUP_OIDC_URL
-      value: https://veilarbstepup-q.nav.no/veilarbstepup/oidc
   liveness:
     path: hurtigveileder/internal/isAlive
     initialDelay: 20
@@ -31,6 +24,7 @@ spec:
     path: hurtigveileder/internal/metrics
   ingresses:
     - "https://hurtigveileder-q.nav.no"
+    - "https://tjenester-q.nav.no/hurtigveileder"
     - "https://hurtigveileder-q0.nais.oera-q.local"
     - "https://hurtigveileder-q0.dev-sbs.nais.io"
   webproxy: true
