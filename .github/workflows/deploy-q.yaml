@@ -38,4 +38,4 @@ jobs:
           APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
           CLUSTER: dev-sbs
           RESOURCE: nais-q.yaml
-          VAR: image=${{ IMAGE }}
+          VAR: image=${IMAGE}
