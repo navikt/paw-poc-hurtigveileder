@@ -27,5 +27,5 @@ spec:
   vault:
     enabled: true
   webproxy: true
-   envFrom:
+  envFrom:
     - configmap: pto-config
