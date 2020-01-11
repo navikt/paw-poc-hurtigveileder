@@ -23,10 +23,8 @@ spec:
     enabled: true
     path: hurtigveileder/internal/metrics
   ingresses:
-    - "https://hurtigveileder-q.nav.no"
-    - "https://tjenester-q.nav.no/hurtigveileder"
-    - "https://hurtigveileder-q0.nais.oera-q.local"
-    - "https://hurtigveileder-q0.dev-sbs.nais.io"
+    - https://www-q.nav.no/arbeid/hurtigveileder
+    - https://hurtigveileder-q0.dev-sbs.nais.io
   webproxy: true
   envFrom:
     - configmap: pto-config

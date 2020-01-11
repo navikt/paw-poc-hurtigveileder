@@ -23,8 +23,7 @@ spec:
     enabled: true
     path: hurtigveileder/internal/metrics
   ingresses:
-    - https://hurtigveileder.nav.no
-    - https://tjenester.nav.no/hurtigveileder
+    - https://www.nav.no/arbeid/hurtigveileder
   vault:
     enabled: true
   webproxy: true
