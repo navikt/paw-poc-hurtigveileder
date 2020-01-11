@@ -24,8 +24,6 @@ spec:
     path: hurtigveileder/internal/metrics
   ingresses:
     - https://www.nav.no/arbeid/hurtigveileder
-  vault:
-    enabled: true
   webproxy: true
   envFrom:
     - configmap: pto-config
