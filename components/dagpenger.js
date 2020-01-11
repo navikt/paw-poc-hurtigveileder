@@ -18,9 +18,9 @@ const DagpengeLink = () => {
 
 const Dagpenger = props => {
   const { lastDay, setShowVeileder } = props
-  const firstDay = calculateDay(lastDay, 6)
+  const firstDay = calculateDay(lastDay, 7)
   const endDay = new Date(firstDay)
-  const periodEnd = new Date(endDay.setDate(endDay.getDate() + 5))
+  const periodEnd = new Date(endDay.setDate(endDay.getDate() + 6))
   const now = new Date()
   const days = daysFromNow(lastDay)
   const handleClick = event => {
