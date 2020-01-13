@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { amplitudeLogger } from '../lib/amplitude-utils'
 import daysFromNow from '../lib/days-from-now'
 import Arbeidsplassen from './arbeidsplassen'
-import Dagpenger from './dagpenger'
+import DagpengerOgRegistrering from './dagpenger-og-registrering'
 import Dokumentasjon from './dokumentasjon'
 import Mer from './mer'
 import Tilbakemelding from './tilbakemelding'
@@ -18,7 +18,7 @@ const Veileder = props => {
 
   return (
     <>
-      <Dagpenger lastDay={lastDay} setShowVeileder={setShowVeileder} />
+      <DagpengerOgRegistrering lastDay={lastDay} setShowVeileder={setShowVeileder} />
       <Dokumentasjon />
       <Arbeidsplassen />
       <Tilbakemelding />
