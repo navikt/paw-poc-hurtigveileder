@@ -10,4 +10,5 @@
 
 #ADD decorator.yaml /decorator.yaml
 FROM nginx
-COPY out /usr/share/nginx/html
+COPY out /usr/share/nginx/html/arbeid/hurtigveileder
+COPY nginx.conf /etc/nginx/nginx.conf

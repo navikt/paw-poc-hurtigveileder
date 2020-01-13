@@ -10,10 +10,10 @@ spec:
   image: {{image}}
   port: 80
   liveness:
-    path: /
+    path: /isAlive
     initialDelay: 20
   readiness:
-    path: /
+    path: /isReady
     initialDelay: 20
   replicas:
     min: 2
