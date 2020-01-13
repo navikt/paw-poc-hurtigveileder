@@ -1,4 +1,4 @@
-contextPath: /
+contextPath: /arbeid/hurtigveileder
 
 auth:
   enforce: false
