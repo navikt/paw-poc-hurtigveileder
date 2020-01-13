@@ -10,6 +10,7 @@
     "start": "next start",
     "export": "next export",
     "now-build": "npm run build && npm run export",
+    "nav-build": "BASE_PATH=/arbeid/hurtigveileder npm run build && npm run export",
     "lint": "standard",
     "lint:fix": "standard --fix",
     "refresh": "rm -rf node_modules && rm package-lock.json && npm i"
