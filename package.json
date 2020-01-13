@@ -1,6 +1,6 @@
 {
   "name": "paw-poc-hurtigveileder",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Eksperiment for minimal veiledning før arbeidssøkerregistrering",
   "main": "index.js",
   "scripts": {
