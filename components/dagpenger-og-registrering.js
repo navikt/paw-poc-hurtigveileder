@@ -1,17 +1,13 @@
-import { amplitudeLogger } from '../lib/amplitude-utils'
+import { handleUrlLog } from '../lib/amplitude-utils'
 import calculateDay from '../lib/calculate-day'
 import prettyPrintDate from '../lib/pretty-print-date'
 import daysFromNow from '../lib/days-from-now'
 
 const DagpengeLink = () => {
-  const handleClick = event => {
-    const url = event.target.href
-    amplitudeLogger('link', { url })
-  }
   return (
     <ul className='mb-2'>
-      <li className='mb-2 text-blue-600'><a href='https://arbeidssokerregistrering.nav.no' className='underline' target='_blank' rel='noopener noreferrer' onClick={handleClick}>Gå til arbeidssøkerregistrering</a></li>
-      <li className='text-blue-600'><a href='https://www.nav.no/soknader/nb/person/arbeid/dagpenger' className='underline' target='_blank' rel='noopener noreferrer' onClick={handleClick}>Gå til dagpengesøknad</a></li>
+      <li className='mb-2 text-blue-600'><a href='https://arbeidssokerregistrering.nav.no' className='underline' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Gå til arbeidssøkerregistrering</a></li>
+      <li className='text-blue-600'><a href='https://www.nav.no/soknader/nb/person/arbeid/dagpenger' className='underline' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Gå til dagpengesøknad</a></li>
     </ul>
   )
 }
@@ -23,14 +19,11 @@ const Dagpenger = props => {
   const periodEnd = new Date(endDay.setDate(endDay.getDate() + 6))
   const now = new Date()
   const days = daysFromNow(lastDay)
-  const handleClick = event => {
-    const url = event.target.href
-    amplitudeLogger('link', { url })
-    return true
-  }
+
   const handleNyDato = () => {
     setShowVeileder(false)
   }
+
   return (
     <div className='bg-white border px-4 py-4 mb-4'>
       <p className='mb-2'>
@@ -46,7 +39,7 @@ const Dagpenger = props => {
       {firstDay <= now ? <DagpengeLink /> : null}
       <p className='mb-2'>
         I dagpengekalkulatoren kan du se hvor mye du kunne fått hvis du fikk innvilget dagpenger fra i dag.<br />
-        <a href='https://www.nav.no/arbeid/dagpenger/kalkulator' className='inline-block border-2 border-blue-600 px-2 py-2 mt-2 text-blue-600 font-bold' target='_blank' rel='noopener noreferrer' onClick={handleClick}>Dagpengekalkulator</a>
+        <a href='https://www.nav.no/arbeid/dagpenger/kalkulator' className='inline-block border-2 border-blue-600 px-2 py-2 mt-2 text-blue-600 font-bold' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Dagpengekalkulator</a>
       </p>
     </div>
   )
