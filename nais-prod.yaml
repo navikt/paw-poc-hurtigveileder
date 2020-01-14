@@ -25,5 +25,3 @@ spec:
   ingresses:
     - https://www.nav.no/arbeid/hurtigveileder
   webproxy: true
-  envFrom:
-    - configmap: pto-config
