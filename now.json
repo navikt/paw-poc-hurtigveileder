@@ -13,7 +13,6 @@
   ],
   "routes": [
     {"src": "/", "dest": "out/index.html", "headers": {
-      "Content-Security-Policy": "default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; connect-src 'self' https://amplitude.nav.no; object-src 'none'; img-src 'self' data:; frame-ancestors 'none'; font-src 'self' https://fonts.gstatic.com",
       "Strict-Transport-Security": "max-age=63072000;",
       "X-Frame-Options": "DENY",
       "X-Content-Type-Options": "nosniff"
