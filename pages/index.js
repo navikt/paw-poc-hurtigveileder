@@ -2,6 +2,7 @@ import { useState } from 'react'
 import DayPicker from 'react-day-picker'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
+import NavHode from '../components/nav-hode'
 import 'react-day-picker/lib/style.css'
 
 const NavFot = dynamic(
@@ -35,10 +36,8 @@ function Home () {
         <meta name='description' content='Hurtigveileder for deg som har mistet jobbben og skal registrere deg som arbeidssøker.' />
         <title>Hurtigveileder - arbeidssøkerregistrering - mistet jobben</title>
       </Head>
+      <NavHode />
       <div className='container mx-auto px-4 py-4 min-h-full'>
-        <h1 className='text-4xl'>
-          Hurtigveileder
-        </h1>
         {showVeileder ? <Veileder lastDay={lastDay} setShowVeileder={setShowVeileder} /> : <Calendar />}
       </div>
       <NavFot />
