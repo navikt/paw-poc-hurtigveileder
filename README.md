@@ -18,8 +18,8 @@ Eksperiment for minimal veiledning før arbeidssøkerregistrering
 ## Urler
 
 - [https://hurtigveileder.nav.party](https://hurtigveileder.nav.party) demo
-- [https://hurtigveileder-q.nav.no](https://hurtigveileder-q.nav.no) q0
-- [https://hurtigveileder.nav.no](https://hurtigveileder.nav.no) produksjon
+- [https://hurtigveileder-q.nav.no](https://www-q.nav.no/arbeid/hurtigveileder) q0
+- [https://hurtigveileder.nav.no](https://www.nav.no/arbeid/hurtigveileder) produksjon
 
 ## Henvendelser
 
