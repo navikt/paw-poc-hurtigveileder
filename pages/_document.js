@@ -5,9 +5,9 @@ class MyDocument extends Document {
     const initialProps = await Document.getInitialProps(ctx)
     return { ...initialProps }
   }
-  
+
   render () {
-    const csp =`default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; connect-src 'self' https://amplitude.nav.no; object-src 'none'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com;`
+    const csp = 'default-src \'none\'; script-src \'self\'; style-src \'self\' \'unsafe-inline\' https://fonts.googleapis.com; connect-src \'self\' https://amplitude.nav.no; object-src \'none\'; img-src \'self\' data:; font-src \'self\' https://fonts.gstatic.com;'
     return (
       <Html lang='no'>
         <Head>
