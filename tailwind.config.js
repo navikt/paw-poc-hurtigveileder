@@ -6,6 +6,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        navBrun: '#3e3832',
+        copyright: '#b7b1a9',
         cyan: '#9cdbff',
         gray: {
           100: '#f1f1f1'
