@@ -31,17 +31,19 @@ function Home () {
     )
   }
   return (
-    <div className='relative h-screen'>
+    <>
       <Head>
         <meta name='description' content='Hurtigveileder for deg som har mistet jobbben og skal registrere deg som arbeidssøker.' />
         <title>Hurtigveileder - arbeidssøkerregistrering - mistet jobben</title>
       </Head>
-      <NavHode />
-      <div className='container mx-auto px-4 py-4 min-h-full'>
-        {showVeileder ? <Veileder lastDay={lastDay} setShowVeileder={setShowVeileder} /> : <Calendar />}
+      <div className='flex flex-col items-start h-screen'>
+        <NavHode />
+        <div className='mx-auto px-4 py-4 flex-grow'>
+          {showVeileder ? <Veileder lastDay={lastDay} setShowVeileder={setShowVeileder} /> : <Calendar />}
+        </div>
+        <NavFot />
       </div>
-      <NavFot />
-    </div>
+    </>
   )
 }
 
