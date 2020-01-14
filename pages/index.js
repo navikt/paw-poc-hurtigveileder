@@ -30,7 +30,7 @@ function Home () {
     )
   }
   return (
-    <div className="relative h-screen">
+    <div className='relative h-screen'>
       <Head>
         <meta name='description' content='Hurtigveileder for deg som har mistet jobbben og skal registrere deg som arbeidssøker.' />
         <title>Hurtigveileder - arbeidssøkerregistrering - mistet jobben</title>
