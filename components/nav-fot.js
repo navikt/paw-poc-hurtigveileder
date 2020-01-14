@@ -2,7 +2,7 @@ import { handleUrlLog } from '../lib/amplitude-utils'
 
 export default () => {
   return (
-    <footer className='flex-end w-screen bg-navBrun flex justify-center'>
+    <footer className='w-screen bg-navBrun flex justify-center'>
       <div className='container text-center pt-5 pb-2'>
         <a href='https://www.nav.no' className='text-white hover:text-blue-600'>NAV</a>
         <ul className='block'>
