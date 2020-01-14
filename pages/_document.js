@@ -5,12 +5,13 @@ class MyDocument extends Document {
     const initialProps = await Document.getInitialProps(ctx)
     return { ...initialProps }
   }
-
+  
   render () {
+    const csp =`default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; connect-src 'self' https://amplitude.nav.no; object-src 'none'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com;`
     return (
       <Html lang='no'>
         <Head>
-          <meta httpEquiv='Content-Security-Policy' content={"default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; connect-src 'self' https://amplitude.nav.no; object-src 'none'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com;"} />
+          <meta httpEquiv='Content-Security-Policy' content={csp} />
           <link href='images/favicon.ico' rel='icon' type='image/x-icon' />
         </Head>
         <body className='bg-gray-100'>
