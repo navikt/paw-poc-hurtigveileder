@@ -19,10 +19,10 @@ const Veileder = props => {
   return (
     <>
       <DagpengerOgRegistrering lastDay={lastDay} setShowVeileder={setShowVeileder} />
-      <Dokumentasjon />
-      <Arbeidsplassen />
-      <Tilbakemelding />
-      <Mer />
+      <Dokumentasjon lastDay={lastDay} />
+      <Arbeidsplassen lastDay={lastDay} />
+      <Tilbakemelding lastDay={lastDay} />
+      <Mer lastDay={lastDay} />
     </>
   )
 }
