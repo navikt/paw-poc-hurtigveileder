@@ -4,7 +4,7 @@ import prettyPrintDate from '../lib/pretty-print-date'
 import daysFromNow from '../lib/days-from-now'
 import calculateStatus from '../lib/calculate-status'
 
-const DagpengeLink = pros => {
+const DagpengeLink = props => {
   const { status } = props
   return (
     <ul className='mb-2'>
@@ -39,7 +39,7 @@ const Dagpenger = props => {
       <p className='mb-2'>
         Husk at du må registrere deg før du søker dagpenger
       </p>
-      {firstDay <= now ? <DagpengeLink status={status}/> : null}
+      {firstDay <= now ? <DagpengeLink status={status} /> : null}
       <p className='mb-2'>
         I dagpengekalkulatoren kan du se hvor mye du kunne fått hvis du fikk innvilget dagpenger fra i dag.<br />
         <a href='https://www.nav.no/arbeid/dagpenger/kalkulator' data-status={status} className='inline-block border-2 border-blue-600 px-2 py-2 mt-2 text-blue-600 font-bold' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Dagpengekalkulator</a>
