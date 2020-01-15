@@ -1,11 +1,17 @@
 import { useState } from 'react'
 import { amplitudeLogger } from '../lib/amplitude-utils'
+import daysFromNow from '../lib/days-from-now'
+import calculateStatus from '../lib/calculate-status'
 
 const Tilbakemelding = props => {
   const [response, setResponse] = useState(false)
+  const { lastDay } = props
+  const days = daysFromNow(lastDay)
+  const status = calculateStatus(days)
+
   const handleClick = event => {
     const smiley = event.target.dataset.smiley
-    amplitudeLogger('tilbakemelding', { smiley })
+    amplitudeLogger('tilbakemelding', { smiley, status })
     setResponse(true)
   }
   const ThankYou = () => {
