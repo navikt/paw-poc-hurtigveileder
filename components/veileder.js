@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { amplitudeLogger } from '../lib/amplitude-utils'
 import daysFromNow from '../lib/days-from-now'
+import calculateStatus from '../lib/calculate-status'
 import Arbeidsplassen from './arbeidsplassen'
 import DagpengerOgRegistrering from './dagpenger-og-registrering'
 import Dokumentasjon from './dokumentasjon'
@@ -10,10 +11,11 @@ import Tilbakemelding from './tilbakemelding'
 const Veileder = props => {
   const { lastDay, setShowVeileder } = props
   const days = daysFromNow(lastDay)
+  const status = calculateStatus(days)
 
   useEffect(() => {
-    amplitudeLogger('visning')
-    amplitudeLogger('dager-i-forkant', { days })
+    amplitudeLogger('visning', { status })
+    amplitudeLogger('dager-i-forkant', { days, status })
   })
 
   return (
