@@ -1,8 +1,8 @@
 module.exports = {
   theme: {
     fontFamily: {
-      display: ['Source Sans Pro', 'sans-serif'],
-      body: ['Source Sans Pro', 'sans-serif']
+      display: ['Source Sans Pro', 'Arial', 'sans-serif'],
+      body: ['Source Sans Pro', 'Arial', 'sans-serif']
     },
     extend: {
       colors: {
