@@ -1,5 +1,3 @@
-const withCSS = require('@zeit/next-css')
-
 const nextConfig = {
   exportTrailingSlash: true,
   assetPrefix: process.env.BASE_PATH || '',
@@ -10,4 +8,4 @@ const nextConfig = {
   }
 }
 
-module.exports = withCSS(nextConfig)
+module.exports = nextConfig

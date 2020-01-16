@@ -30,7 +30,6 @@
     "node": ">=12.14.1"
   },
   "dependencies": {
-    "@zeit/next-css": "1.0.1",
     "amplitude-js": "5.8.0",
     "autoprefixer": "9.7.4",
     "next": "9.2.0",

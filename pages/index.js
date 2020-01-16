@@ -3,7 +3,6 @@ import DayPicker from 'react-day-picker'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import NavHode from '../components/nav-hode'
-import 'react-day-picker/lib/style.css'
 
 const NavFot = dynamic(
   () => import('../components/nav-fot'),
