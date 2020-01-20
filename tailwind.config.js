@@ -98,11 +98,6 @@ module.exports = {
         navLysBlaLighten80: "#E0F5FB",
         gray: {
           100: '#f1f1f1',
-        },
-        blue: {
-          100: '#cce1f3',
-          400: '#99c2e8',
-          600: '#0067C5'
         }
       }
     }

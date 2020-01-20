@@ -12,12 +12,12 @@ const Mer = props => {
         <strong>Ønsker du mer veiledning?</strong>
       </p>
       <ul>
-        <li className='mb-2'><a href='https://www.nav.no/dagpenger' data-status={status} className='underline text-blue-600' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Mer om dagpenger</a></li>
-        <li className='mb-2'><a href='https://veiledearbeidssoker.nav.no/mistet-jobben?sprak=nb' data-status={status} className='underline text-blue-600' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Gå til veileder for deg som har mistet jobben eller sagt opp</a></li>
-        <li className='mb-2'><a href='https://veiledearbeidssoker.nav.no/permittert?sprak=nb' data-status={status} className='underline text-blue-600' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Gå til veileder for deg som er permittert</a></li>
-        <li className='mb-2'><a href='https://veiledearbeidssoker.nav.no/bytte-jobb?sprak=nb' data-status={status} className='underline text-blue-600' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Gå til veileder for deg som vil bytte jobb</a></li>
-        <li className='mb-2'><a href='https://veiledearbeidssoker.nav.no/ung-lite-erfaring?sprak=nb' data-status={status} className='underline text-blue-600' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Gå til veileder for deg som er ung</a></li>
-        <li className='mb-2'><a href='https://veiledearbeidssoker.nav.no/utenfor-arbeidslivet-lenge?sprak=nb' data-status={status} className='underline text-blue-600' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Gå til veileder for deg som har stått utenfor arbeidslivet lenge</a></li>
+        <li className='mb-2'><a href='https://www.nav.no/dagpenger' data-status={status} className='underline text-navBla' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Mer om dagpenger</a></li>
+        <li className='mb-2'><a href='https://veiledearbeidssoker.nav.no/mistet-jobben?sprak=nb' data-status={status} className='underline text-navBla' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Gå til veileder for deg som har mistet jobben eller sagt opp</a></li>
+        <li className='mb-2'><a href='https://veiledearbeidssoker.nav.no/permittert?sprak=nb' data-status={status} className='underline text-navBla' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Gå til veileder for deg som er permittert</a></li>
+        <li className='mb-2'><a href='https://veiledearbeidssoker.nav.no/bytte-jobb?sprak=nb' data-status={status} className='underline text-navBla' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Gå til veileder for deg som vil bytte jobb</a></li>
+        <li className='mb-2'><a href='https://veiledearbeidssoker.nav.no/ung-lite-erfaring?sprak=nb' data-status={status} className='underline text-navBla' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Gå til veileder for deg som er ung</a></li>
+        <li className='mb-2'><a href='https://veiledearbeidssoker.nav.no/utenfor-arbeidslivet-lenge?sprak=nb' data-status={status} className='underline text-navBla' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Gå til veileder for deg som har stått utenfor arbeidslivet lenge</a></li>
       </ul>
     </div>
   )
