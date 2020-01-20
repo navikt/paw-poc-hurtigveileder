@@ -3,7 +3,6 @@ import DayPicker from 'react-day-picker'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import NavHode from '../components/nav-hode'
-import ArbeidsplassenCV from '../components/arbeidsplassen-cv'
 
 const NavFot = dynamic(
   () => import('../components/nav-fot'),
@@ -20,7 +19,7 @@ function Home () {
   const [arbeidsplassenSvar, setArbeidsplassenSvar] = useState(false)
   const [showVeileder, setShowVeileder] = useState(false)
   const [showCalendar, setShowCalendar] = useState(false)
-  
+
   const handleDateChange = date => {
     setLastDay(date)
     setShowVeileder(true)
@@ -44,12 +43,12 @@ function Home () {
   const ArbeidsplassenCV = () => {
     return (
       <div className='bg-white p-4 mb-4'>
-        <p className="font-bold mb-4">
+        <p className='font-bold mb-4'>
           Har du opprettet CV og jobbprofil på Arbeidsplassen.no?
         </p>
-        <div className="flex">
-          <button data-arbeidsplassen="ja" onClick={handleArbeidsplassenSvar} className="flex-grow font-bold text-center bg-navGronn text-white p-4">Ja</button>
-          <button data-arbeidsplassen="nei" onClick={handleArbeidsplassenSvar} className="flex-grow font-bold text-center bg-redError text-white p-4">Nei</button>
+        <div className='flex'>
+          <button data-arbeidsplassen='ja' onClick={handleArbeidsplassenSvar} className='flex-grow font-bold text-center bg-navGronn text-white p-4'>Ja</button>
+          <button data-arbeidsplassen='nei' onClick={handleArbeidsplassenSvar} className='flex-grow font-bold text-center bg-redError text-white p-4'>Nei</button>
         </div>
       </div>
     )
