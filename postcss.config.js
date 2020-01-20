@@ -8,6 +8,6 @@ module.exports = {
     'postcss-import': {},
     tailwindcss: {},
     autoprefixer: {},
-    '@fullhuman/postcss-purgecss': purgecssConfig
+    //'@fullhuman/postcss-purgecss': purgecssConfig
   }
 }

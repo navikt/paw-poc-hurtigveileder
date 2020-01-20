@@ -95,10 +95,7 @@ module.exports = {
         navLysBlaLighten20: '#85D5F0',
         navLysBlaLighten40: '#A3E0F4',
         navLysBlaLighten60: '#C2EAF7',
-        navLysBlaLighten80: '#E0F5FB',
-        gray: {
-          100: '#f1f1f1'
-        }
+        navLysBlaLighten80: '#E0F5FB'
       }
     }
   }
