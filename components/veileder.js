@@ -15,7 +15,7 @@ const Veileder = props => {
   const showArbeidsplassen = arbeidsplassenSvar !== 'ja'
 
   useEffect(() => {
-    amplitudeLogger('visning', { status })
+    amplitudeLogger('visning', { status, arbeidsplassenSvar })
     amplitudeLogger('dager-i-forkant', { days, status })
   })
 
