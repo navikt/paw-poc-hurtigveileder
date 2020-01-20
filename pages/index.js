@@ -47,8 +47,8 @@ function Home () {
           Har du opprettet CV og jobbprofil på Arbeidsplassen.no?
         </p>
         <div className='flex'>
-          <button data-arbeidsplassen='ja' onClick={handleArbeidsplassenSvar} className='flex-grow font-bold text-center bg-navGronnLighten80 p-4 mr-2'>Ja</button>
-          <button data-arbeidsplassen='nei' onClick={handleArbeidsplassenSvar} className='flex-grow font-bold text-center bg-redErrorLighten80 p-4 mr-2'>Nei</button>
+          <button data-arbeidsplassen='ja' onClick={handleArbeidsplassenSvar} className='flex-grow font-bold text-center border-2 border-navBla px-2 py-2 mt-2 mr-2 text-navBla font-bold hover:bg-navBla hover:text-white'>Ja</button>
+          <button data-arbeidsplassen='nei' onClick={handleArbeidsplassenSvar} className='flex-grow font-bold text-center border-2 border-navBla px-2 py-2 mt-2 mr-2 text-navBla font-bold hover:bg-navBla hover:text-white'>Nei</button>
         </div>
       </div>
     )

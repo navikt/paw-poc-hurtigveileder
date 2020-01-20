@@ -42,7 +42,7 @@ const Dagpenger = props => {
       {firstDay <= now ? <DagpengeLink status={status} /> : null}
       <p className='mb-2'>
         I dagpengekalkulatoren kan du se hvor mye du kunne fått hvis du fikk innvilget dagpenger fra i dag.<br />
-        <a href='https://www.nav.no/arbeid/dagpenger/kalkulator' data-status={status} className='inline-block border-2 border-navBla px-2 py-2 mt-2 text-navBla font-bold' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Dagpengekalkulator</a>
+        <a href='https://www.nav.no/arbeid/dagpenger/kalkulator' data-status={status} className='inline-block border-2 border-navBla px-2 py-2 mt-2 text-navBla font-bold hover:bg-navBla hover:text-white' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Dagpengekalkulator</a>
       </p>
     </div>
   )
