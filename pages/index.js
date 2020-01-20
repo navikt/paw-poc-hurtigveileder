@@ -34,8 +34,8 @@ function Home () {
   const Calendar = () => {
     return (
       <div className='bg-white px-4 py-4'>
+        <p className='mt-2 font-bold'>Når er siste dag du får lønn for</p>
         <DayPicker onDayClick={handleDateChange} />
-        <p className='mt-2'><strong>Oppgi siste dag du får lønn for</strong></p>
       </div>
     )
   }
@@ -64,7 +64,7 @@ function Home () {
         <NavHode />
         <div className='mx-auto p-4 flex-grow'>
           {!arbeidsplassenSvar ? <ArbeidsplassenCV /> : null}
-          {showVeileder ? <Veileder lastDay={lastDay} setShowVeileder={setShowVeileder} /> : showCalendar ? <Calendar /> : null}
+          {showVeileder ? <Veileder lastDay={lastDay} arbeidsplassenSvar={arbeidsplassenSvar} setShowVeileder={setShowVeileder} /> : showCalendar ? <Calendar /> : null}
         </div>
         <NavFot />
       </div>

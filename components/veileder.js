@@ -9,9 +9,10 @@ import Mer from './mer'
 import Tilbakemelding from './tilbakemelding'
 
 const Veileder = props => {
-  const { lastDay, setShowVeileder } = props
+  const { lastDay, setShowVeileder, arbeidsplassenSvar } = props
   const days = daysFromNow(lastDay)
   const status = calculateStatus(days)
+  const showArbeidsplassen = arbeidsplassenSvar !== 'ja'
 
   useEffect(() => {
     amplitudeLogger('visning', { status })
@@ -22,7 +23,7 @@ const Veileder = props => {
     <>
       <DagpengerOgRegistrering lastDay={lastDay} setShowVeileder={setShowVeileder} />
       <Dokumentasjon lastDay={lastDay} />
-      <Arbeidsplassen lastDay={lastDay} />
+      {showArbeidsplassen ? <Arbeidsplassen lastDay={lastDay} /> : null}
       <Tilbakemelding lastDay={lastDay} />
       <Mer lastDay={lastDay} />
     </>
