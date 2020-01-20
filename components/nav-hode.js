@@ -2,7 +2,7 @@ export default () => {
   return (
     <header className='bg-white mb-5'>
       <div className='flex flex-col'>
-        <div className='py-4 flex justify-center border-b border-gray-400'>
+        <div className='py-4 flex justify-center border-b border-navGra40'>
           <a href='https://www.nav.no' title='Hjem'>
             <img src='images/nav-logo.png' alt='NAV-logo' />
           </a>
