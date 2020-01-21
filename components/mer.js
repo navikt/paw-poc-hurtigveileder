@@ -7,7 +7,7 @@ const Mer = props => {
   const days = daysFromNow(lastDay)
   const status = calculateStatus(days)
   return (
-    <div className='bg-white border px-4 py-4 mb-4'>
+    <div className='bg-white border px-4 py-4 mb-4 border border-navGra40'>
       <p className='mb-2'>
         <strong>Ønsker du mer veiledning?</strong>
       </p>

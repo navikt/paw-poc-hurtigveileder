@@ -8,7 +8,7 @@ const Arbeidsplassen = props => {
   const status = calculateStatus(days)
 
   return (
-    <div className='bg-white border px-4 py-4 mb-4'>
+    <div className='bg-white border px-4 py-4 mb-4 border border-navGra40'>
       <p>
         <a href='https://arbeidsplassen.nav.no/' data-status={status} className='underline text-navBla' target='_blank' rel='noopener noreferrer' onClick={handleUrlLog}>Du kan legge inn CVen din og finne ledige stillinger på arbeidsplassen.no</a>
       </p>

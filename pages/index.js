@@ -33,7 +33,7 @@ function Home () {
 
   const Calendar = () => {
     return (
-      <div className='bg-white px-4 py-4'>
+      <div className='bg-white px-4 py-4 border border-navGra40'>
         <p className='mt-2 font-bold'>Når er siste dag du får lønn for</p>
         <DayPicker onDayClick={handleDateChange} />
       </div>
@@ -42,7 +42,7 @@ function Home () {
 
   const ArbeidsplassenCV = () => {
     return (
-      <div className='bg-white p-4 mb-4'>
+      <div className='bg-white p-4 mb-4 border border-navGra40'>
         <p className='font-bold mb-4'>
           Har du opprettet CV og jobbprofil på Arbeidsplassen.no?
         </p>

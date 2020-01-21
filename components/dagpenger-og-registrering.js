@@ -28,7 +28,7 @@ const Dagpenger = props => {
   }
 
   return (
-    <div className='bg-white border px-4 py-4 mb-4'>
+    <div className='bg-white border px-4 py-4 mb-4 border border-navGra40'>
       <p className='mb-2'>
         Din siste dag med lønn {days > 0 ? 'er' : 'var'} <strong>{prettyPrintDate(lastDay)}.</strong> <span className='cursor-pointer text-navBla' onClick={handleNyDato}>[endre dato]</span>
       </p>
