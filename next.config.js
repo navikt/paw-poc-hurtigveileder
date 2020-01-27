@@ -1,11 +1,6 @@
 const nextConfig = {
   exportTrailingSlash: true,
-  assetPrefix: process.env.BASE_PATH || '',
-  exportPathMap: function () {
-    return {
-      '/': { page: '/' }
-    }
-  }
+  assetPrefix: process.env.BASE_PATH || ''
 }
 
 module.exports = nextConfig
