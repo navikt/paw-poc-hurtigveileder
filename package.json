@@ -41,6 +41,6 @@
     "tailwindcss": "1.9.0"
   },
   "devDependencies": {
-    "standard": "14.3.1"
+    "standard": "14.3.4"
   }
 }
