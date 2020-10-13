@@ -1,5 +1,5 @@
 const nextConfig = {
-  exportTrailingSlash: true,
+  trailingSlash: true,
   assetPrefix: process.env.BASE_PATH || ''
 }
 

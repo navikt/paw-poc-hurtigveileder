@@ -98,5 +98,11 @@ module.exports = {
         navLysBlaLighten80: '#E0F5FB'
       }
     }
+  },
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+    defaultLineHeights: true,
+    standardFontWeights: true
   }
 }
