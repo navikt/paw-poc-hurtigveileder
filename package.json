@@ -30,7 +30,7 @@
     "node": ">=12.14.1"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "2.0.5",
+    "@fullhuman/postcss-purgecss": "2.3.0",
     "amplitude-js": "5.8.0",
     "autoprefixer": "9.8.6",
     "next": "9.5.3",
