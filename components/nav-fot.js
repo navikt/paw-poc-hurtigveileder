@@ -12,7 +12,7 @@ export default () => {
           <li className='py-2 mx-4 md:inline-block'><a href='https://www.nav.no/no/rss' className='text-white hover:text-navBla' onClick={handleUrlLog}>Nyheter som RSS</a></li>
         </ul>
         <p className='text-navGra40'>
-            Arbeids- og velferdsetaten 2020
+          Arbeids- og velferdsetaten 2020
         </p>
       </div>
     </footer>
